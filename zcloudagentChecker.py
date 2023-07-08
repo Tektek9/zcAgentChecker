@@ -10,14 +10,6 @@ url = "alamat zoneadmin kamu"
 
 print("\n===============================")
 print("=  Bulk ZCloud Agent Checker  =")
-print("===============kuliOnline0011==")
-print("1. Cek All Agent Server")
-print("2. Simple check")
-jawaban =  int(input("Silahkan pilih menu diatas: "))
-print("\n")
-
-print("\n===============================")
-print("=  Bulk ZCloud Agent Checker  =")
 print("===============================")
 print("1. Cek All Agent zCloud")
 print("2. Simple check")
