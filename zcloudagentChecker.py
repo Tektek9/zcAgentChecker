@@ -8,6 +8,19 @@ email = "emailmu"
 passwd = "passwordmu"
 url = "alamat zoneadmin kamu"
 
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+import threading
+from bs4 import BeautifulSoup
+import requests  
+import sys
+from datetime import datetime
+
+email = "om.team@jagoanhosting.com"
+passwd = "u4dc%LA5atScJV^q"
+url = "https://zoneadmin.jagoanhosting.com/"
+
 print("\n===============================")
 print("=  Bulk ZCloud Agent Checker  =")
 print("===============================")
@@ -17,6 +30,8 @@ print("3. Monitoring All Agent zCloud")
 print("4. Keluar")
 jawaban =  int(input("Silahkan pilih menu diatas: "))
 print("\n")
+
+tanggal = datetime.now()
 
 def serverwithAgent():    
     options = webdriver.ChromeOptions()
@@ -87,11 +102,13 @@ def monitoring():
             a += 1
             # print(f"monitor ke {a}")
             time.sleep(5)
+            print(tanggal)
         elif a == 25:
             takon = str(input("Apakah anda ingin lanjut melakukan monitoring Y/N ?? "))
             if takon == "Y" or takon == "y":
                 monitoring()
             else:
+                print("Maaf inputan tidak jelas, program auto close ya :V")
                 sys.exit()
     
 t = threading.Thread(target=monitoring)
@@ -136,4 +153,4 @@ elif jawaban == 4:
     print("Terimakasih salam kuli boskuh :*")
     sys.exit()
 else:
-    print("Silahkan masukan dengan benar boskuh XD")
+    print("Silahkan masukan dengan benar ya boskuh XD")
