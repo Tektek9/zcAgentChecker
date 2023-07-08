@@ -1,25 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-from bs4 import BeautifulSoup
-import requests  
-
-email = "emailmu"
-passwd = "passwordmu"
-url = "alamat zoneadmin kamu"
-
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
 import threading
 from bs4 import BeautifulSoup
 import requests  
 import sys
 from datetime import datetime
 
-email = "om.team@jagoanhosting.com"
-passwd = "u4dc%LA5atScJV^q"
-url = "https://zoneadmin.jagoanhosting.com/"
+email = "emailmu"
+passwd = "passwordmu"
+url = "zoneadmin urlmu"
 
 print("\n===============================")
 print("=  Bulk ZCloud Agent Checker  =")
